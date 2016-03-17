@@ -63,7 +63,10 @@ namespace ListViewTesti1
 
             // second and third columns
             listView1.Items[0].SubItems.Add(m.measurement1.ToString());
-            listView1.Items[0].SubItems.Add(m.measurement2.ToString());            
+            listView1.Items[0].SubItems.Add(m.measurement2.ToString());
+            listView1.Items[0].SubItems.Add(m.measurement3.ToString());
+            listView1.Items[0].SubItems.Add(rivi.ToString());
+
         }
 
         private void buttonStop_Click(object sender, EventArgs e)
@@ -85,6 +88,11 @@ namespace ListViewTesti1
                     thread.Join();
                 }
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
